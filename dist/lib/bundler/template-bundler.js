@@ -1,15 +1,12 @@
 'use strict';
 
-var _Object$defineProperty = require('babel-runtime/core-js/object/define-property')['default'];
-
 var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
 
 var _interopRequireWildcard = require('babel-runtime/helpers/interop-require-wildcard')['default'];
 
-_Object$defineProperty(exports, '__esModule', {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
-
 exports.bundleTemplate = bundleTemplate;
 
 var _jspm = require('jspm');
@@ -53,7 +50,7 @@ function bundleTemplate(pattern, fileName, _opts) {
 
   _jspm2['default'].setPackagePath(options.packagePath);
 
-  var builder = new _jspm2['default'].Builder();
+  var builder = new _jspm2['default'].Builder(options.builder);
   var baseURL = builder.loader.baseURL;
   var cwd = _systemjsBuilderLibUtils2['default'].fromFileURL(baseURL);;
   var outfile = _path2['default'].resolve(_systemjsBuilderLibUtils2['default'].fromFileURL(baseURL), fileName);

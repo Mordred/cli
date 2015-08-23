@@ -1,13 +1,10 @@
 'use strict';
 
-var _Object$defineProperty = require('babel-runtime/core-js/object/define-property')['default'];
-
 var _Object$keys = require('babel-runtime/core-js/object/keys')['default'];
 
-_Object$defineProperty(exports, '__esModule', {
+Object.defineProperty(exports, '__esModule', {
   value: true
 });
-
 exports['default'] = bundle;
 
 var _jsBundler = require('./js-bundler');
